@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}Projects{% endblock title %}
+
+{% block home%}
+<section id="projects">
+    <h2 class="fade-in">Projects</h2>
+    <div class="project-container">
+      <div class="project-card fade-up">
+        <h3>Portfolio Website</h3>
+        <p>A sleek, responsive portfolio built with HTML, CSS, and JavaScript,Bootsrap and Django to showcase my work and skills.</p>
+        <a href="https://github.com/yourusername/portfolio" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a> |
+        <a href="https://yourportfolio.com" target="_blank">Live Demo</a>
+      </div>
+  
+      <div class="project-card fade-up delay-1">
+        <h3>Aptech Learning</h3>
+        <p>Aptech Learning Website is responsive and dynamic educational platform built with HTML-CSS,JavaScript,Bootstrap, Node.js, and MySQL.</p>
+        <a href="https://github.com/PriyaRayate/Aptech_Learning_Website" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a> |
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+  
+      <div class="project-card fade-up delay-2">
+        <h3>Weather Dashboard</h3>
+        <p>A simple weather dashboard that fetches real-time data from OpenWeatherMap API and displays it dynamically.</p>
+        <a href="https://github.com/yourusername/weather-dashboard" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a> |
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+  {% endblock home %}

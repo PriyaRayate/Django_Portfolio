@@ -1,0 +1,32 @@
+{% extends 'home/base.html' %}
+
+{% load static%}
+
+<link rel="stylesheet" href="{% static 'core/css/home.css' %}">
+
+{% block title %}Home{% endblock title %}
+
+<!-- Home Section  -->
+ {% block home%}
+<section id="hero">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col mt-5 left-content animate-text "> 
+       <h1 style="font-family: Oswald; font-size: 30px; font-weight: bold;">Hello, <span></span></h1>
+        <h1 style="font-family: Oswald; font-size: 30px; font-weight: bold;">My Name is... <span></span></h1>
+        <h1 class="satisfy-regular">Priya Rayate <span></span></h1>
+       <button type="button" class="btn btn-danger">
+        <a href="{% url 'about1' %}"  style="font-family: Montserrat,sans-serif; text-decoration: none; padding: 12px; font-size: 25px; color: azure;">Hire Now</a></button> 
+      </div>
+      <div class="col right-content animate-image"> 
+        <img src="{% static 'core/images/itgirl.png' %}" alt="" height="600px" width="700px">
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock home%}
+
+<!-- End Home Section  -->
+              

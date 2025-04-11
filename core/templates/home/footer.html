@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    
+    <footer>
+        <div class="wave-container">
+            <svg class="wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#1e3c72" d="M0,128L60,133.3C120,139,240,149,360,138.7C480,128,600,96,720,80C840,64,960,64,1080,80C1200,96,1320,128,1380,144L1440,160V320H1380C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320H0Z"></path>
+            </svg>
+        </div>
+
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <ul class="footer-menu">
+                <li><a href="{% url 'home1' %}">Home</a></li>
+                <li><a href="{% url 'about1' %}">About</a></li>
+                <li><a href="{% url 'service1' %}">Services</a></li>
+                <li><a href="{% url 'skill1' %}">Skills</a></li>
+                <li><a href="{% url 'contact1' %}">Contact</a></li>
+            </ul>
+
+            <p class="copyright">©2025 Priya Rayate | All Rights Reserved</p>
+        </div>
+    </footer>
